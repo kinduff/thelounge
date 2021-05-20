@@ -1,0 +1,16 @@
+---
+application:
+  name: "thelounge"
+  project: "TheLounge"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "thelounge"
+    size: "500"
+    type: "slow_hdd"
+    mount_point: "/mnt/thelounge"
+routers:
+- name: "main-thelounge"
+  routes:
+  - application_name: "thelounge"
+    paths:
+    - "/*"
